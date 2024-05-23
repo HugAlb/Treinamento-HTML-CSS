@@ -1,3 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap');
+
 body{
-    background-color: lightgoldenrodyellow;
+    display: flex;
+    background-color: #fafad2;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+header{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    background-color: #FFB5B5BA;
+    padding: 10px;
+    width: 100%;
+    font-family: Flamenco;
+    font-size: 30px;
+    
+}
+
+ul :hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.conteudo{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.dupla{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.titulo{
+    font-family: Flamenco;
+    font-size: 30px;
+    text-align: center;
+}
+
+.conteudo-texto{
+    font-family: Flamenco;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+strong{
+    text-align: center;
+}
+
+.verso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Flamenco;
+    gap: 10px;
+
+}
+
+.verso1{
+    width: 219px;
+    height: 34px;
+    background-color: #FFEBEB;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verso2{
+    width: 219px;
+    height: 34px;
+    background-color: #E7FFE7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verso3{
+    width: 219px;
+    height: 34px;
+    background-color: #F7EDFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$ Produtos $$$$$$$$$$$$$$$$$$$$$$$*/
+
+/*$$$$$$$$$$$$$$$$$$$$$$$ Cards menores $$$$$$$$$$$$$$$$$$$$$$$*/
+
+/* Config do card menor 1 */
+
+.card-menor-1 {
+    width: 300px;
+    height: 272px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+}
+
+.card-menor-1 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menor-1 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-menor-1 .front {
+    background-color: #FFB5B5BA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-menor-1 .back {
+    background-color: #FFB5B5BA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-menor-1:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-menor-1:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+/* Config do card grande 2 */
+
+.card-menor-2 {
+    width: 300px;
+    height: 272px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+}
+
+.card-menor-2 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menor-2 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-menor-2 .front {
+    background-color: #A4E4A3BA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-menor-2 .back {
+    background-color: #A4E4A3BA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-menor-2:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-menor-2:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+/* Config do card grande 3 */
+
+.card-menor-3 {
+    width: 300px;
+    height: 272px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+}
+
+.card-menor-3 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menor-3 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-menor-3 .front {
+    background-color: #E6C7FFBA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-menor-3 .back {
+    background-color: #E6C7FFBA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-menor-3:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-menor-3:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+/* Config do card grande 4 */
+
+.card-menor-4 {
+    width: 300px;
+    height: 272px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+}
+
+.card-menor-4 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-menor-4 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-menor-4 .front {
+    background-color: #FFB5B5BA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-menor-4 .back {
+    background-color: #FFB5B5BA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-menor-4:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-menor-4:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$ Cards grandes $$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+/* Config do card grande 1 */
+
+.card-grande-1 {
+    width: 300px;
+    height:  555px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grande-1 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grande-1 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-grande-1 .front {
+    background-color: #E6C7FFBA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-grande-1 .back {
+    background-color: #E6C7FFBA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-grande-1:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-grande-1:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+/* Config do card grande 2 */
+
+.card-grande-2 {
+    width: 300px;
+    height:  555px;
+    position: relative;
+    perspective: 1000px; /* Adiciona perspectiva 3D */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grande-2 .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-grande-2 .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Oculta o lado de trás do card durante a rotação */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave durante a rotação */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-grande-2 .front {
+    background-color: #A4E4A3BA;
+    transform: rotateY(0deg); /* Define a posição inicial do lado da frente */
+}
+
+.card-grande-2 .back {
+    background-color: #A4E4A3BA;
+    transform: rotateY(180deg); /* Define a posição inicial do lado de trás */
+}
+
+.card-grande-2:hover .front {
+    transform: rotateY(-180deg); /* Rotaciona o lado da frente quando o card é hover */
+}
+
+.card-grande-2:hover .back {
+    transform: rotateY(0deg); /* Rotaciona o lado de trás quando o card é hover */
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$ Início $$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    width: 75%;
+    height: 272px;
+    background-color: #FFB5B5BA;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box2{
+    width: 75%;
+    height: 75%;
+    background-color: #A4E4A3BA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box3{
+    width: 75%;
+    height: 272px;
+    background-color: #E6C7FFBA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box4{
+    width: 75%;
+    height: 200%;
+    background-color: #A4E4A3BA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-box1{
+    width: 90%;
+    height: 90%;
+    background-color: #FFEBEB;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sub-box2{
+    width: 90%;
+    height: 172px;
+    background-color: #E7FFE7;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-box3{
+    width: 90%;
+    height: 172px;
+    background-color: #F7EDFF;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sub-box4{
+    width: 90%;
+    height: 50%;
+    background-color: #E7FFE7;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 20px;
 }
